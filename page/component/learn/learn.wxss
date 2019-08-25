@@ -1,0 +1,35 @@
+.page {
+  flex: 1;
+  background-color: #ff0;
+  font-size: 30px;
+}
+
+.page-section {
+  padding: 40px;
+}
+
+.flex-item {
+  width: 100px;
+  height: 100px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex {
+  display: flex;
+}
+
+.item {
+  padding: 10px;
+  background-color: #fff;
+  color: #787878;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.item image {
+  width: 30%;
+}

@@ -1,0 +1,31 @@
+<view class="page">
+  <view class="page-section">
+    <text>
+      View Dome {{myText}}
+    </text>
+  </view>
+  <view class="page-section">
+    <view>flex-direction: row</view>
+    <view class="flex-row">
+      <view class="flex-item">1</view>
+      <view class="flex-item">2</view>
+      <view class="flex-item">3</view>
+      <view class="flex-item">4</view>
+      <view class="flex-item">4{{appContent}}</view>
+    </view>
+    <!-- <button type="default"> -->
+      <navigator url="/page/component/index" hover-class="navigator-hover" open-type="navigate">
+        调到主页
+      </navigator>
+    <!-- </button> -->
+    <button type="warn" size="mini" bindtap="doloading">跳到我的页面</button>
+  </view>
+
+  <view class="flex item">
+    <view class="item-left">
+      <image src="/image/22.png"></image>
+    </view>
+    <view class="item-middle"></view>
+    <view class="item-right"></view>
+  </view>
+</view>
