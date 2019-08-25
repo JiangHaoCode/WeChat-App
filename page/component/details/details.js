@@ -5,7 +5,7 @@ Page({
       id: 1,
       image: '/image/goods1.png',
       title: '新鲜梨花带雨',
-      price: 0.01,
+      price: 0.11,
       stock: '有货',
       detail: '这里是梨花带雨详情。',
       parameter: '125g/个',
