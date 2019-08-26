@@ -7,11 +7,10 @@
   <view class="page-section">
     <view>flex-direction: row</view>
     <view class="flex-row">
-      <view class="flex-item">1</view>
-      <view class="flex-item">2</view>
-      <view class="flex-item">3</view>
-      <view class="flex-item">4</view>
-      <view class="flex-item">4{{appContent}}</view>
+      <view wx:for="{{blogList}}">
+        <view>1: {{item.title}}</view>
+        <view>2: {{item.content}}</view>
+      </view>
     </view>
     <!-- <button type="default"> -->
       <navigator url="/page/component/index" hover-class="navigator-hover" open-type="navigate">

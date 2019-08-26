@@ -5,6 +5,7 @@ Page({
     myText: 'Hello World',
     appContent: app.globalData.message,
     text: 'This is page data.',
+    blogList: [],
   },
 
   doloading: function(e) {
@@ -13,7 +14,13 @@ Page({
 
   onLoad: function(options) {
     // 页面创建时执行
-    console.log(options)
+    wx.request({
+      url: `https://yapi.hapyun.com/mock/245/weixin/blog`,
+      success: res => {
+        console.log(res)
+        this.setData({blogList: res.data.data});
+      }
+    });
   },
   onShow: function() {
     // 页面出现在前台时执行
@@ -50,6 +57,7 @@ Page({
   },
   // 事件响应函数
   viewTap: function() {
+    console.log(1111)
     this.setData({
       text: 'Set some data for updating view.'
     }, function() {

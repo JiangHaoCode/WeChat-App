@@ -16,7 +16,7 @@ App({
 
   globalData: {
     hasLogin: false,
-    message: 'github.com 完成',
+    message: 'github.commmmm完成',
     content: '搞定',
   }
 })
